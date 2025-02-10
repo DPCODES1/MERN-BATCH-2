@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Dark Mode</title>
+    <script>
+      tailwind.config = {
+        darkMode:"class"
+      }
+    </script>
+  </head>
+  <body class="bg-red-800 dark:bg-black">
+    <h1 class="text-black dark:text-white text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum corrupti ipsa vel, inventore provident. Hic, nihil sunt possimus labore suscipit, excepturi id fugit reprehenderit saepe voluptatibus modi laboriosam repellat.</h1>
+    <div>
+      <input id="check" type="checkbox">
+    </div>
+  </body>
+</html>
+<script>
+   const checkbox = document.getElementById("check");
+   checkbox.addEventListener("change",function(e) {
+       if(this.checked) {
+         document.documentElement.classList.add("dark")
+       } else {
+        document.documentElement.classList.remove("dark")
+       }
+   })
+</script>

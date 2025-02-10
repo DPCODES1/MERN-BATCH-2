@@ -1,0 +1,48 @@
+body {
+    overflow-x: hidden;
+}
+
+#box{
+    height: 100px;
+    overflow: hidden;
+    background-color: red;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation:round 2s ease 0s infinite alternate backwards;
+    /* transition: ; */
+    /* transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-in-out; 
+    transition-property: transform; */
+    /* transform: skewX(20deg);
+    transform-origin: top left; */
+    /* transition: transform 1s ease 2s; */
+}
+
+#box-container {
+
+    width: 5000px;    
+
+    background-color: blue;
+}
+
+/* @keyframes round {
+    0% {
+        transform: translateX(100%,100%);
+    }
+
+    33% {
+        transform: translate(100%);
+    }
+
+    66% {
+        transform: translate(100%,100%);
+    }
+
+    99% {
+        transform: translate(0%,100%);
+    }
+
+    100% {
+        transform: translateX(0,0);
+    }
+} */

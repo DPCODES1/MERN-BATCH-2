@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    'header header'
+    'header content'
+    ;
+}
+
+
+div {
+   text-align: center;
+}
+
+.one {
+    background-color: red;
+    grid-area:content;
+}
+
+
+.two {
+    background-color: blue;
+    /* grid-row-start: 2 ;
+    grid-row-end: 4; */
+    grid-area:header;
+}
+
+.three {
+    background-color: green;
+    grid-area:content
+}
+
+.four {
+    background-color: blueviolet;
+    grid-area: header;
+}
+
+.five {
+    background-color: beige;
+}
+
+.six {
+    background-color: brown;
+}
+
+.seven {
+    background-color: blanchedalmond;
+}
+
+.eight {
+    background-color: aliceblue;
+}
+
+.nine {
+    background-color: chocolate;
+}
+
+.ten {
+    background-color: darkgray;
+}

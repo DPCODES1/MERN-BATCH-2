@@ -54,7 +54,11 @@ footer {
 }
 
 footer img {
-    width: 100px;
+    width: 50px;
+}
+
+.alt {
+    width: 50px;
 }
 
 footer a {
